@@ -1,2 +1,2 @@
-# timer.js
+# Timer.js
 Pure JavaScript timer plugin
