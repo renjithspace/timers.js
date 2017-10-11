@@ -23,3 +23,11 @@ new Timer({
     ...
 });
 ```
+
+## Options
+| Property     | Description          | Available values          | Default value |
+|--------------|----------------------|---------------------------|---------------|
+| el           | Timer.js element     | Element selector (string) | '.timer'      |
+| time.second  | Set initial second   | integer                   | 0             |
+| time.minute  | Set initial minute   | integer                   | 0             |
+| time.hour    | Set initial hour     | integer                   | 0             |
