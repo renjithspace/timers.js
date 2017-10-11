@@ -14,3 +14,12 @@ Pure JavaScript timer plugin
 ```js
 new Timer();
 ```
+
+## Configuration
+```js
+new Timer({
+    // Options here
+    property: value,
+    ...
+});
+```
