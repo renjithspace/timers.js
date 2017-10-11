@@ -77,5 +77,20 @@
             }, 1000);
         }
 
+        // Runner
+        function runner(runner, value) {
+            switch (runner) {
+                case 'second':
+                this.secondElement.innerHTML = (value <= 9) ? '0' + value : value;
+                break;
+                case 'minute':
+                this.minuteElement.innerHTML = (value <= 9) ? '0' + value + ':' : value + ':';
+                break;
+                case 'hour':
+                this.hourElement.innerHTML = (value <= 9) ? '0' + value + ':' : value + ':';
+                break;
+            }
+        }
+
     };
 }());
