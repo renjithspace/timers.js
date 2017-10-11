@@ -92,5 +92,8 @@
             }
         }
 
+        // Invoke
+        builder(this.options.el, this.options.time);
+
     };
 }());
