@@ -1,0 +1,7 @@
+(function() {
+
+    this.Timer = function() {
+
+    };
+    
+}());
