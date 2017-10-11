@@ -56,5 +56,26 @@
             timer(time.second, time.minute, time.hour);
         }
 
+        // Timer
+        function timer(second, minute, hour) {
+            setInterval( function() {
+                second++;
+
+                if (second == 60) {
+                    second = 0;
+                    minute++;
+                    if (minute == 60) {
+                        minute = 0;
+                        hour++;
+                    }
+                }
+
+                // Runner
+                runner('second', second);
+                runner('minute', minute);
+                runner('hour', hour);
+            }, 1000);
+        }
+
     };
 }());
