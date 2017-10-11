@@ -26,5 +26,35 @@
             }
         }
 
+        // Build elements
+        function builder(element, time) {
+
+            // Time element
+            let timeElement = document.querySelector(element);
+
+            // Hour element
+            let hourElement = document.createElement('span');
+            hourElement.className = 'hour';
+            this.hourElement = timeElement.appendChild(hourElement);
+
+            // Minute element
+            let minuteElement = document.createElement('span');
+            minuteElement.className = 'minute';
+            this.minuteElement = timeElement.appendChild(minuteElement);
+
+            // Second element
+            let secondElement = document.createElement('span');
+            secondElement.className = 'second';
+            this.secondElement = timeElement.appendChild(secondElement);
+
+            // Initial time
+            runner('hour', time.hour);
+            runner('minute', time.minute);
+            runner('second', time.second);
+
+            // Invoke timer
+            timer(time.second, time.minute, time.hour);
+        }
+
     };
 }());
