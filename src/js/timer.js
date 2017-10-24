@@ -97,6 +97,18 @@
             self.hourElement.innerHTML = (hour <= 9) ? '0' + hour + ':' : hour + ':';
         }
 
+        /**
+         |---------------
+         | Public methods
+         |---------------
+         |
+         */
+
+         // Get
+         this.get = function(time) {
+             return this.options.time[time];
+         }
+
         // Invoke
         builder();
 
