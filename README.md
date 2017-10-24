@@ -33,6 +33,13 @@ new Timer({
 | time.hour    | Set initial hour     | integer                   | 0             |
 
 ## Methods
-| Method                        | Description          |
-|-------------------------------|----------------------|
-| .get('second|minute|hour')    | Get the current time |
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>.get('second|minute|hour')</td>
+        <td>Get the current time</td>
+    </tr>
+</table>
