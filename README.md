@@ -31,3 +31,8 @@ new Timer({
 | time.second  | Set initial second   | integer                   | 0             |
 | time.minute  | Set initial minute   | integer                   | 0             |
 | time.hour    | Set initial hour     | integer                   | 0             |
+
+## Methods
+| Method                        | Description          |
+|-------------------------------|----------------------|
+| .get('second|minute|hour')    | Get the current time |
