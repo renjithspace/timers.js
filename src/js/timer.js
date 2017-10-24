@@ -26,74 +26,79 @@
             }
         }
 
+        /**
+         |----------------
+         | Private methods
+         |----------------
+         |
+         */
+
+         let self = this;
+
         // Build elements
-        function builder(element, time) {
+        function builder() {
 
             // Time element
-            let timeElement = document.querySelector(element);
+            let timeElement = document.querySelector(self.options.el);
 
             // Hour element
             let hourElement = document.createElement('span');
             hourElement.className = 'hour';
-            this.hourElement = timeElement.appendChild(hourElement);
+            self.hourElement = timeElement.appendChild(hourElement);
 
             // Minute element
             let minuteElement = document.createElement('span');
             minuteElement.className = 'minute';
-            this.minuteElement = timeElement.appendChild(minuteElement);
+            self.minuteElement = timeElement.appendChild(minuteElement);
 
             // Second element
             let secondElement = document.createElement('span');
             secondElement.className = 'second';
-            this.secondElement = timeElement.appendChild(secondElement);
+            self.secondElement = timeElement.appendChild(secondElement);
 
             // Initial time
-            runner('hour', time.hour);
-            runner('minute', time.minute);
-            runner('second', time.second);
+            runner();
 
             // Invoke timer
-            timer(time.second, time.minute, time.hour);
+            timer();
         }
 
         // Timer
-        function timer(second, minute, hour) {
+        function timer() {
             setInterval( function() {
-                second++;
 
-                if (second == 60) {
-                    second = 0;
-                    minute++;
-                    if (minute == 60) {
-                        minute = 0;
-                        hour++;
+                if (!self.options.isStoped) {
+                    self.options.time.second++;
+
+                    if (self.options.time.second == 60) {
+                        self.options.time.second = 0;
+                        self.options.time.minute++;
+                        if (self.options.time.minute == 60) {
+                            self.options.time.minute = 0;
+                            self.options.time.hour++;
+                        }
                     }
-                }
 
-                // Runner
-                runner('second', second);
-                runner('minute', minute);
-                runner('hour', hour);
+                    // Runner
+                    runner();
+                }
             }, 1000);
         }
 
         // Runner
-        function runner(runner, value) {
-            switch (runner) {
-                case 'second':
-                this.secondElement.innerHTML = (value <= 9) ? '0' + value : value;
-                break;
-                case 'minute':
-                this.minuteElement.innerHTML = (value <= 9) ? '0' + value + ':' : value + ':';
-                break;
-                case 'hour':
-                this.hourElement.innerHTML = (value <= 9) ? '0' + value + ':' : value + ':';
-                break;
-            }
+        function runner() {
+            let second = self.options.time.second;
+            let minute = self.options.time.minute;
+            let hour = self.options.time.hour;
+
+            // Formate and push to elements
+            self.secondElement.innerHTML = (second <= 9) ? '0' + second : second;
+            self.minuteElement.innerHTML = (minute <= 9) ? '0' + minute + ':' : minute + ':';
+            self.hourElement.innerHTML = (hour <= 9) ? '0' + hour + ':' : hour + ':';
         }
 
         // Invoke
-        builder(this.options.el, this.options.time);
+        builder();
 
     };
 }());
