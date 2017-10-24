@@ -11,14 +11,21 @@
 
     <!-- Timer -->
     <h3>Timer</h3>
-    <time class="timer"></time>
+    <time></time>
 
     <!-- Include timer.js -->
     <script src="../src/js/timer.js"></script>
 
     <!-- Initialize timer.js -->
     <script>
-        new Timer();
+        let timer = new Timer({
+            el: 'time',
+            time: {
+                second: 55,
+                minute: 59,
+                hour: 0,
+            },
+        });
     </script>
 
 </body>
