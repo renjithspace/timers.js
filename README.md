@@ -31,6 +31,7 @@ new Timer({
 | time.second  | Set initial second   | integer                   | 0             |
 | time.minute  | Set initial minute   | integer                   | 0             |
 | time.hour    | Set initial hour     | integer                   | 0             |
+| isStoped     | Set timer status     | boolean                   | false         |
 
 ## Methods
 <table>

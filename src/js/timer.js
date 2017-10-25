@@ -10,6 +10,7 @@
                 minute: 0,
                 hour: 0,
             },
+            isStoped: false,
         };
 
         // Extend defaul options
