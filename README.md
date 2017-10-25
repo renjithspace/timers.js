@@ -42,4 +42,8 @@ new Timer({
         <td>.get('second|minute|hour')</td>
         <td>Get the current time</td>
     </tr>
+    <tr>
+        <td>.set('second|minute|hour', value)</td>
+        <td>Set time</td>
+    </tr>
 </table>

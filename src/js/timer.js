@@ -109,6 +109,12 @@
              return this.options.time[time];
          }
 
+         // Set
+         this.set = function(time, value) {
+             this.options.time[time] = value;
+             runner();
+         }
+
         // Invoke
         builder();
 
