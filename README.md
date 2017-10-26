@@ -48,6 +48,10 @@ new Timer({
         <td>Set time</td>
     </tr>
     <tr>
+        <td>.pause()</td>
+        <td>Pause the timer</td>
+    </tr>
+    <tr>
         <td>.stop()</td>
         <td>Stop the timer</td>
     </tr>
