@@ -47,4 +47,8 @@ new Timer({
         <td>.set('second|minute|hour', value)</td>
         <td>Set time</td>
     </tr>
+    <tr>
+        <td>.stop()</td>
+        <td>Stop the timer</td>
+    </tr>
 </table>

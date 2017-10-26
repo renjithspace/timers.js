@@ -116,6 +116,15 @@
              runner();
          }
 
+         // Stop
+        this.stop = function() {
+            this.options.time.second = 0;
+            this.options.time.minute = 0;
+            this.options.time.hour = 0;
+            this.options.isStoped = true;
+            runner();
+        }
+
         // Invoke
         builder();
 
