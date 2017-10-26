@@ -55,4 +55,8 @@ new Timer({
         <td>.stop()</td>
         <td>Stop the timer</td>
     </tr>
+    <tr>
+        <td>.start()</td>
+        <td>Start the timer</td>
+    </tr>
 </table>

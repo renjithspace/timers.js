@@ -131,6 +131,12 @@
             runner();
         }
 
+        // Start
+        this.start = function() {
+            this.options.isStoped = false;
+            runner();
+        }
+
         // Invoke
         builder();
 
