@@ -116,7 +116,13 @@
              runner();
          }
 
-         // Stop
+        // Pause
+        this.pause = function() {
+            this.options.isStoped = true;
+            runner();
+        }
+
+        // Stop
         this.stop = function() {
             this.options.time.second = 0;
             this.options.time.minute = 0;
