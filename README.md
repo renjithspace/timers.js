@@ -1,4 +1,4 @@
-# Timer.js
+# Timers.js
 Pure JavaScript timer plugin
 
 
@@ -12,7 +12,7 @@ npm install timers.js --save
 ## Usage
 **Include**
 ```js
-<script src="dist/js/timer.js"></script>
+<script src="dist/js/timers.js"></script>
 ```
 **Initialize**
 ```js
