@@ -8,7 +8,7 @@ Pure JavaScript timer plugin
 ## Usage
 **Include**
 ```js
-<script src="src/js/timer.js"></script>
+<script src="dist/js/timer.js"></script>
 ```
 **Initialize**
 ```js
