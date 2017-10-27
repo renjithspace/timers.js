@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/renjithvk/timer.js#readme",
   "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.0.1",
     "webpack": "^3.8.1"
   }
 }
