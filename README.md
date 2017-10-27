@@ -3,6 +3,10 @@ Pure JavaScript timer plugin
 
 
 ## Installation
+**NPM**
+```sh
+npm install timers.js --save
+```
 **Direct download** from [latest releases](https://github.com/renjithvk/timer.js/releases)
 
 ## Usage
