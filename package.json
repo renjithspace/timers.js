@@ -1,0 +1,23 @@
+{
+  "name": "timer.js",
+  "version": "1.0.0",
+  "description": "Pure JavaScript timer plugin",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renjithvk/timer.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renjithvk/timer.js/issues"
+  },
+  "homepage": "https://github.com/renjithvk/timer.js#readme"
+}
