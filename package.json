@@ -2,7 +2,7 @@
   "name": "timer.js",
   "version": "1.0.0",
   "description": "Pure JavaScript timer plugin",
-  "main": "index.js",
+  "main": "dis/js/timer.js",
   "directories": {
     "test": "test"
   },
