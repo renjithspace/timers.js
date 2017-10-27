@@ -1,5 +1,5 @@
 {
-  "name": "timer.js",
+  "name": "timers.js",
   "version": "1.0.0",
   "description": "Pure JavaScript timer plugin",
   "main": "dis/js/timer.js",
