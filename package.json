@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/renjithvk/timer.js/issues"
   },
-  "homepage": "https://github.com/renjithvk/timer.js#readme"
+  "homepage": "https://github.com/renjithvk/timer.js#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
 }
