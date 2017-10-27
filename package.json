@@ -2,7 +2,7 @@
   "name": "timers.js",
   "version": "1.0.0",
   "description": "Pure JavaScript timer plugin",
-  "main": "dis/js/timer.js",
+  "main": "dis/js/timers.js",
   "directories": {
     "test": "test"
   },
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renjithvk/timer.js.git"
+    "url": "git+https://github.com/renjithvk/timers.js.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renjithvk/timer.js/issues"
+    "url": "https://github.com/renjithvk/timers.js/issues"
   },
-  "homepage": "https://github.com/renjithvk/timer.js#readme",
+  "homepage": "https://github.com/renjithvk/timers.js#readme",
   "devDependencies": {
     "uglifyjs-webpack-plugin": "^1.0.1",
     "webpack": "^3.8.1"
