@@ -7,6 +7,10 @@ Pure JavaScript timer plugin
 ```sh
 npm install timers.js --save
 ```
+**In Node.js**
+```js
+require('pre.js')
+```
 **Direct download** from [latest releases](https://github.com/renjithvk/timer.js/releases)
 
 ## Usage
