@@ -1,6 +1,6 @@
 {
   "name": "timers.js",
-  "version": "1.0.2",
+  "version": "1.1.10",
   "description": "Pure JavaScript timer plugin",
   "main": "dist/js/timers.js",
   "directories": {
