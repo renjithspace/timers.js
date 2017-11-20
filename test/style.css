@@ -39,3 +39,20 @@ button {
 .button-group {
     margin-top: 25px;
 }
+
+select {
+    border: 1px solid #333;
+    padding: 10px 3px;
+    background: #fff;
+}
+
+.disply-time {
+    display: inline-block;
+    font-size: 20px;
+    background: #5da7fa;
+    line-height: 40px;
+    vertical-align: sub;
+    color: #fff;
+    width: 40px;
+    border-radius: 50px;
+}

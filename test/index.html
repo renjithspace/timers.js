@@ -19,6 +19,16 @@
             <button type="button" onclick="timer.resume()">Resume</button>
             <button type="button" onclick="timer.stop()">Stop</button>
         </div>
+
+        <div class="button-group">
+            <select id="time">
+                <option value="second">Second</option>
+                <option value="minute">Minute</option>
+                <option value="hour">Hour</option>
+            </select>
+            <button type="button" onclick="getTime()">Get</button>
+            <div class="disply-time"></div>
+        </div>
     </div>
 
     <!-- Include timer.js -->
@@ -34,6 +44,12 @@
                 hour: 1,
             },
         });
+
+        // Time getter
+        function getTime() {
+            var time = timer.get(document.querySelector('#time').value);
+            document.querySelector('.disply-time').innerText = time;
+        }
     </script>
 
 </body>
