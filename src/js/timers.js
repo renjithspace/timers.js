@@ -139,8 +139,8 @@
             runner();
         }
 
-        // Start
-        this.start = function() {
+        // Resume
+        this.resume = function() {
             this.options.isStoped = false;
             runner();
         }
