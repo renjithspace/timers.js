@@ -1,19 +1,25 @@
 /*Timer.js test*/
-html {
-    background: #f8f8f8;
-    text-align: center;
-}
-
 body {
     margin: 0;
     font-family: monospace;
+    background: #5da7fa;
+    padding-top: 10vh;
+}
+
+.well {
     max-width: 500px;
     display: block;
     margin: auto;
     background: #fff;
-    padding: 15px;
-    border-radius: 3px;
-    margin-top: 10vh;
-    border: 1px solid #eeeeee;
+    padding: 30px;
+    border-radius: 5px;
     line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+time {
+    font-size: 21px;
+    display: block;
+    margin-top: 50px;
 }
