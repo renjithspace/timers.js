@@ -63,3 +63,7 @@ input {
     height: 37px;
     padding: 0 10px;
 }
+
+.form-group {
+    margin-top: 65px;
+}
