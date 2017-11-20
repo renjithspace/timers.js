@@ -9,7 +9,7 @@ npm install timers.js --save
 ```
 **In Node.js**
 ```js
-require('pre.js')
+require('timers.js')
 ```
 **Direct download** from [latest releases](https://github.com/renjithvk/timer.js/releases)
 
