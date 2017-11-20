@@ -75,13 +75,11 @@
                         return self.stop();
                     }
 
-                    if(self.options.time.second == -1) {
-
+                    if (self.options.time.second == -1) {
                         self.options.time.second = (self.options.time.minute == -1) ? 0 : 59;
                         self.options.time.minute--;
 
-                        if(self.options.time.minute == -1) {
-
+                        if (self.options.time.minute == -1) {
                             self.options.time.minute = (self.options.time.hour == -1) ? 0 : 59;
                             self.options.time.hour--;
                         }
