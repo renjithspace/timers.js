@@ -67,8 +67,4 @@ new Timer({
         <td>.start()</td>
         <td>Start the timer</td>
     </tr>
-    <tr>
-        <td>.restart()</td>
-        <td>Restart the timer</td>
-    </tr>
 </table>

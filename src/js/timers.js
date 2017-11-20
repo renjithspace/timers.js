@@ -145,15 +145,6 @@
             runner();
         }
 
-        // Restart
-        this.restart = function() {
-            this.options.time.second = 0;
-            this.options.time.minute = 0;
-            this.options.time.hour = 0;
-            this.options.isStoped = false;
-            runner();
-        }
-
         // Invoke
         builder();
 
