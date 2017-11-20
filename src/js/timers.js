@@ -69,16 +69,24 @@
             setInterval( function() {
 
                 if (!self.options.isStoped) {
-                    self.options.time.second++;
+                    self.options.time.second--;
 
-                    if (self.options.time.second == 60) {
-                        self.options.time.second = 0;
-                        self.options.time.minute++;
-                        if (self.options.time.minute == 60) {
-                            self.options.time.minute = 0;
-                            self.options.time.hour++;
+                    if (self.options.time.hour == 0 && self.options.time.minute == 0 && self.options.time.second == -1) {
+                        return self.stop();
+                    }
+
+                    if(self.options.time.second == -1) {
+
+                        self.options.time.second = (self.options.time.minute == -1) ? 0 : 59;
+                        self.options.time.minute--;
+
+                        if(self.options.time.minute == -1) {
+
+                            self.options.time.minute = (self.options.time.hour == -1) ? 0 : 59;
+                            self.options.time.hour--;
                         }
                     }
+
 
                     // Runner
                     runner();
