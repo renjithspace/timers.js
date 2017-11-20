@@ -29,6 +29,16 @@
             <button type="button" onclick="getTime()">Get</button>
             <div class="disply-time"></div>
         </div>
+
+        <div class="button-group">
+            <select id="time-type">
+                <option value="second">Second</option>
+                <option value="minute">Minute</option>
+                <option value="hour">Hour</option>
+            </select>
+            <input type="number" id="time-field" placeholder="54">
+            <button type="button" onclick="setTime()">Set</button>
+        </div>
     </div>
 
     <!-- Include timer.js -->
@@ -49,6 +59,13 @@
         function getTime() {
             var time = timer.get(document.querySelector('#time').value);
             document.querySelector('.disply-time').innerText = time;
+        }
+
+        // Time setter
+        function setTime() {
+            var time = document.querySelector('#time-type').value;
+            var value = document.querySelector('#time-field').value;
+            timer.set(time, value);
         }
     </script>
 
