@@ -4,6 +4,7 @@ body {
     font-family: monospace;
     background: #5da7fa;
     padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .well {
@@ -34,6 +35,7 @@ button {
     text-transform: uppercase;
     outline: none !important;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .button-group {
@@ -66,4 +68,11 @@ input {
 
 .form-group {
     margin-top: 65px;
+}
+
+@media only screen and (max-width: 425px) {
+    .well {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
 }
