@@ -46,6 +46,7 @@ select {
     border: 1px solid #333;
     padding: 10px 3px;
     background: #fff;
+    margin-bottom: 10px;
 }
 
 .disply-time {
