@@ -9,6 +9,7 @@
                 second: 0,
                 minute: 0,
                 hour: 0,
+                day: 0,
             },
             isStoped: false,
         };
@@ -41,7 +42,13 @@
 
             // Time element
             let timeElement = document.querySelector(self.options.el);
+           
+           // Day element
+            let dayElement = document.createElement('span');
+            dayElement.className = 'day';
+            self.dayElement = timeElement.appendChild(dayElement);
 
+          
             // Hour element
             let hourElement = document.createElement('span');
             hourElement.className = 'hour';
@@ -71,7 +78,7 @@
                 if (!self.options.isStoped) {
                     self.options.time.second--;
 
-                    if (self.options.time.hour == 0 && self.options.time.minute == 0 && self.options.time.second == -1) {
+                    if (self.options.time.day == 0 && self.options.time.hour == 0 && self.options.time.minute == 0 && self.options.time.second == -1) {
                         return self.stop();
                     }
 
@@ -82,6 +89,11 @@
                         if (self.options.time.minute == -1) {
                             self.options.time.minute = (self.options.time.hour == -1) ? 0 : 59;
                             self.options.time.hour--;
+                            if (self.options.time.hour == -1) {
+                                self.options.time.hour = (self.options.time.day == -1) ? 0 : 23;
+                                self.options.time.day--;
+                              
+                            }
                         }
                     }
 
@@ -97,11 +109,13 @@
             let second = self.options.time.second;
             let minute = self.options.time.minute;
             let hour = self.options.time.hour;
+            let day = self.options.time.day;
 
             // Formate and push to elements
             self.secondElement.innerHTML = (second <= 9) ? '0' + second : second;
             self.minuteElement.innerHTML = (minute <= 9) ? '0' + minute + ':' : minute + ':';
             self.hourElement.innerHTML = (hour <= 9) ? '0' + hour + ':' : hour + ':';
+            self.dayElement.innerHTML = (day <= 9) ? '0' + day + ':' : day + ':';
         }
 
         /**
@@ -133,6 +147,7 @@
             this.options.time.second = 0;
             this.options.time.minute = 0;
             this.options.time.hour = 0;
+            this.options.time.day = 0;
             this.options.isStoped = true;
             runner();
         }
